@@ -39,13 +39,29 @@ console.log(age);
 
 //let age=> 17 edi , funksiya ichida 20 bersak ham u tasir qilmadi ,funksiya ichida 20 tashqarida esa 17
 
+//const ae=18+(getCalculations(4,7));
+//console.log(ae);
 
-function getCalculations(a,b)
-{
-    return a+b;  // malumotdi qaytaradi ozida saqlab turadi, i ustida amal bajarsa boladi 
+//function getCalculations(a,b)
+//{
+ //   return a+b;  // malumotdi qaytaradi ozida saqlab turadi, i ustida amal bajarsa boladi 
    // ozidan keyin ishlatmidi 
-    let tyu=25;
-    console.log(tyu);
+ //   let tyu=25;
+  //  console.log(tyu);
+//}
+
+
+// function decleration => biz uni script ichida xohlagan joyimizda chaqiramiz
+
+const HelloWorld=function()
+{
+    console.log("Hello world!");
 }
-const ae=18+(getCalculations(4,7));
-console.log(ae);
+HelloWorld();
+const CalculateXojiaka=function(a,b)
+{
+    return a+b;
+}
+console.log(CalculateXojiaka(9,7));
+
+// function expression
