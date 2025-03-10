@@ -8,26 +8,26 @@
 // FUNCTION DECLERATION
 // 3 TA ASOSIY QISM  key->function nomi->
 
-function  SHowHelloworld()
-{
-    console.log("Hello world!");
-}
-SHowHelloworld();
+//function  SHowHelloworld()
+//{
+    //console.log("Hello world!");
+//}
+//SHowHelloworld();
 
-let age=17;
-console.log(age);
-function sayHellotoUser(name)
-{
-    let age=20;
-    console.log(`Hello ${name},he is ${age} years old`);
-}
+//let age=17;
+//console.log(age);
+//function sayHellotoUser(name)
+// {
+//     let age=20;//
+//     console.log(`Hello ${name},he is ${age} years old`);
+// }
 
-sayHellotoUser("Sardor");
-console.log(age);
+// sayHellotoUser("Sardor");
+// console.log(age);
 
 // () -> argument dynamic malumotlar
 
-// ""  ` ` -> backstick
+// ""  ` ` -> backstick/
 
 // argumentdi ichida name
 
@@ -53,26 +53,48 @@ console.log(age);
 
 // function decleration => biz uni script ichida xohlagan joyimizda chaqiramiz
 
-const HelloWorld=function()
-{
-    console.log("Hello world!");
-}
-HelloWorld();
-const CalculateXojiaka=function(a,b)
-{
-    return a+b;
-}
-console.log(CalculateXojiaka(9,7));
+// const HelloWorld=function()
+// {
+//     console.log("Hello world!");
+// }
+// HelloWorld();
+// const CalculateXojiaka=function(a,b)
+// {
+//     return a+b;
+// }
+// console.log(CalculateXojiaka(9,7));
 
-// function expression
+// // function expression => function nomi yoq boladi
+// // function expression
 
 
-// arrow function =>
+// // arrow function =>
 
-const CalculateXojiaka1=(a,b)=>
-{
-    return a+b;
-}
+// const CalculateXojiaka1=(a,b)=>
+// {
+//     return a+b;
+// }
 
-// amal 1ta bolsa => bir qatorda blok sxemasiz yoziladi
-console.log(CalculateXojiaka1(9,8));
+// // amal 1ta bolsa => bir qatorda blok sxemasiz yoziladi
+// console.log(CalculateXojiaka1(9,8));
+
+
+// metod -> tayyor funksiya => obyektda,arrayda,stringda =>
+
+  const hojiaka='Helloworld!'; // 12 ta belgi bor
+  console.log(hojiaka.length);
+ 
+  // lenght -> metod -> property
+  // qiymat 
+  // metod  funksiya  () =>argument
+  console.log('Bu harf',hojiaka.charAt(2));
+  console.log(hojiaka[5]);  // property
+  console.log(hojiaka[5]='A');
+  console.log('Harflarni kattalashtrdik',hojiaka.toUpperCase());
+ console.log('harflarni kichraytirdik',hojiaka.toLowerCase());
+console.log('kesish:',hojiaka.slice(0,-5));// -minus son 
+// => metod faqat return qiymat qaytaradi
+ console.log('toza kesish',hojiaka.substring(0,-5));
+
+ // slice=> substring
+console.log(hojiaka);
