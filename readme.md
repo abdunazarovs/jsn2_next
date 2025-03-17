@@ -6,3 +6,7 @@
 // function expression va arrow function
 
 // 10.03.2025 metodlar
+
+
+// 17.03 metodlar string number metodlar
+

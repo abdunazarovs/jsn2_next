@@ -98,3 +98,30 @@ console.log('kesish:',hojiaka.slice(0,-5));// -minus son
 
  // slice=> substring
 console.log(hojiaka);
+
+const  Password='  ozbekiston     '  // parol
+// trim
+console.log(Password);
+console.log(Password.trim());
+console.log(Password.trimStart());
+// trimstart- oldidagi space chopadi
+console.log(Password.trimEnd());
+// trim methoddi bizga ortqcha spacelarni qirqish uchun ishlatamiz
+
+// trimdi bizga ortqcha spacelarni qirqish uchun ishlatamiz4
+
+const son=13.7;
+console.log('roundni natijasi',Math.round(son));
+// round ozidan kattaga qarab yuradi
+console.log('floorni natijasi',Math.floor(son))
+// floor nuqtadan keyingilardi chopvoradi
+// round floor vazifasi taqriblaberish
+
+const width='323.9px'; // stringda 
+// stringdegi malumotdi raqamga otkazish
+console.log('numberga olish',parseInt(width));
+// parseInt => stringdi raqam qb oladi + uni yaxlitledi (prinsipi floor kabi verguldan keyin chopad)
+console.log('numberga olish',parseFloat(width));
+// parseFloat => stringdi raqam qib beradi
+
+// callback va asnyx
