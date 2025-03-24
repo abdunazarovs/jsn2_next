@@ -129,40 +129,137 @@
 //88r8
 
 
-const firstlog=() =>
-  { setTimeout(function(){   // timeout 
-      console.log('first log');
-  },1000) /// 1000 -> 1 sekund  
+// const firstlog=() =>
+//   { setTimeout(function(){   // timeout 
+//       console.log('first log');
+//   },1000) /// 1000 -> 1 sekund  
 
-};
-function second()
-{
-  console.log('second');
-}
-firstlog();
-second();
-// const age=function( age)
+// };
+// function second()
 // {
-//   console.log("16");
+//   console.log('second');
 // }
-// console.log(age);
+// firstlog();
+// second();
+// // const age=function( age)
+// // {
+// //   console.log("16");
+// // }
+// // console.log(age);
 
-function ShowGreeting(callback)
-{
-    console.log('Hello world');
-    callback();
-}
+// function ShowGreeting(callback)
+// {
+//     console.log('Hello world');
+//     callback();
+// }
 
-ShowGreeting(function()
-{
-    console.log('are you ready');  // doimiy varianti 
+// ShowGreeting(function()
+// {
+//     console.log('are you ready');  // doimiy varianti 
 
-})
+// })
 
-ShowGreeting(()=>{console.log('are you ready')}); // arrow varianti bu hammasi bir xil ishlatiladi
+// ShowGreeting(()=>{console.log('are you ready')}); // arrow varianti bu hammasi bir xil ishlatiladi
 //  callback 163dan chaqirilmayapti
 //  callback function 
 
 // callback function qaysidir funksiya qanchadir davom etgandan keyin chaqirish uchun ishlatiladi
 
 
+// const person=
+// {
+//     name:'Abdunazar',
+//     age:19,
+//     job:'teacher',
+//     hobbies:{spor:'football',
+//      games:'cs go',
+//     },
+
+//    sayHello:function()
+//    {
+//          console.log(`hell0 ${this.name}`); // this  obyektdi ichide xossani chaqrish uchun ishlatiladi 
+//    },
+// }
+
+// // this haqda toliq keyin tushintiriladi
+
+//  person.sayHello(); // obyekt metodi
+//   console.log(person); // persondi chaiqramiz .name qib hossani chaqrishimiz mumkin
+// // // // endi iteratsiya qilish mumkin ,har bir keyga murojaat qilish  uchun
+// for (let key in person)// key bu hossalar ,
+
+//  {
+//     console.log(typeof key);
+//    console.log(typeof person[key]);
+//      console.log(`property:"${key}`,`value :${person[key]}`);// valuega murojat
+//  }
+// // // // faqatgina string malumot turini chiqara olamiz
+// // // // objectni chiqarish uchun for in ishlatiladi
+ 
+// //let counter=0;
+// // for in faqatgina obyekt uchun   for of faqat massiv uchun ishlatiladi
+//  for (let key in person)
+//  { 
+//      if(typeof person[key]==='object');
+//         {
+//             for(let i in person[key])
+//             {
+//                 console.log(`property:"${i}`,`value :${person[key [i]]}`);
+//             }
+//         }
+//        // counter ++;
+//     }
+
+//  //console.log(counter);
+//     console.log(Object.keys(person).length);
+//     // funks orqali chaqirsh let counter koyb kuyb
+// // obyekt uchun ham ozimiz metod yasashimiz mumkn
+// // metod
+
+
+
+// //destruktizatsiya
+// // person.name qib yuravermizmu
+
+// const {name,sayHello,hobbies}=person;  // obyektni ichidagi malumotni ovolish uchun 
+// console.log(hobbies);
+
+
+const person=
+{
+    name:'Abdunazar',
+    age:19,
+    job:'teacher',
+    hobbies:{spor:'football',
+     games:'cs go',
+    },
+  
+  }
+
+for (let key in person)     // takrorlanish iteratsiya aylanish
+{
+  console.log(typeof key);
+  console.log(typeof person[key]);
+  
+  console.log(`property:"${key}`)  // name ,keyin aylnayaptida age
+  console.log('value:',person[key]) // value: Abdunazar
+
+}
+
+// for in faqatgina obyekt uchun ishlatiladi for of bolsa massiv
+
+
+
+
+// iteratsiya yordamida obyekt bilan
+
+console.log(person.name)  // .name (key) hossa
+
+// this ,destruktizatsiya ,obyektdi ichida ozimiz metod yaratish
+
+
+//destruktizatsiya  -> 
+//
+const  {name,age}=person;
+// person.name -> person
+console.log(age,name);
