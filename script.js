@@ -68,60 +68,101 @@
 // // function expression
 
 
-// // arrow function =>
+// // // arrow function =>
 
-// const CalculateXojiaka1=(a,b)=>
-// {
-//     return a+b;
-// }
+// // const CalculateXojiaka1=(a,b)=>
+// // {
+// //     return a+b;
+// // }
 
-// // amal 1ta bolsa => bir qatorda blok sxemasiz yoziladi
-// console.log(CalculateXojiaka1(9,8));
+// // // amal 1ta bolsa => bir qatorda blok sxemasiz yoziladi
+// // console.log(CalculateXojiaka1(9,8));
 
 
-// metod -> tayyor funksiya => obyektda,arrayda,stringda =>
+// // metod -> tayyor funksiya => obyektda,arrayda,stringda =>
 
-  const hojiaka='Helloworld!'; // 12 ta belgi bor
-  console.log(hojiaka.length);
+//   const hojiaka='Helloworld!'; // 12 ta belgi bor
+//   console.log(hojiaka.length);
  
-  // lenght -> metod -> property
-  // qiymat 
-  // metod  funksiya  () =>argument
-  console.log('Bu harf',hojiaka.charAt(2));
-  console.log(hojiaka[5]);  // property
-  console.log(hojiaka[5]='A');
-  console.log('Harflarni kattalashtrdik',hojiaka.toUpperCase());
- console.log('harflarni kichraytirdik',hojiaka.toLowerCase());
-console.log('kesish:',hojiaka.slice(0,-5));// -minus son 
-// => metod faqat return qiymat qaytaradi
- console.log('toza kesish',hojiaka.substring(0,-5));
+//   // lenght -> metod -> property
+//   // qiymat 
+//   // metod  funksiya  () =>argument
+//   console.log('Bu harf',hojiaka.charAt(2));
+//   console.log(hojiaka[5]);  // property
+//   console.log(hojiaka[5]='A');
+//   console.log('Harflarni kattalashtrdik',hojiaka.toUpperCase());
+//  console.log('harflarni kichraytirdik',hojiaka.toLowerCase());
+// console.log('kesish:',hojiaka.slice(0,-5));// -minus son 
+// // => metod faqat return qiymat qaytaradi
+//  console.log('toza kesish',hojiaka.substring(0,-5));
 
- // slice=> substring
-console.log(hojiaka);
+//  // slice=> substring
+// console.log(hojiaka);
 
-const  Password='  ozbekiston     '  // parol
-// trim
-console.log(Password);
-console.log(Password.trim());
-console.log(Password.trimStart());
-// trimstart- oldidagi space chopadi
-console.log(Password.trimEnd());
-// trim methoddi bizga ortqcha spacelarni qirqish uchun ishlatamiz
+// const  Password='  ozbekiston     '  // parol
+// // trim
+// console.log(Password);
+// console.log(Password.trim());
+// console.log(Password.trimStart());
+// // trimstart- oldidagi space chopadi
+// console.log(Password.trimEnd());
+// // trim methoddi bizga ortqcha spacelarni qirqish uchun ishlatamiz
 
-// trimdi bizga ortqcha spacelarni qirqish uchun ishlatamiz4
+// // trimdi bizga ortqcha spacelarni qirqish uchun ishlatamiz4
 
-const son=13.7;
-console.log('roundni natijasi',Math.round(son));
-// round ozidan kattaga qarab yuradi
-console.log('floorni natijasi',Math.floor(son))
-// floor nuqtadan keyingilardi chopvoradi
-// round floor vazifasi taqriblaberish
+// const son=13.7;
+// console.log('roundni natijasi',Math.round(son));
+// // round ozidan kattaga qarab yuradi
+// console.log('floorni natijasi',Math.floor(son))
+// // floor nuqtadan keyingilardi chopvoradi
+// // round floor vazifasi taqriblaberish
 
-const width='323.9px'; // stringda 
-// stringdegi malumotdi raqamga otkazish
-console.log('numberga olish',parseInt(width));
-// parseInt => stringdi raqam qb oladi + uni yaxlitledi (prinsipi floor kabi verguldan keyin chopad)
-console.log('numberga olish',parseFloat(width));
-// parseFloat => stringdi raqam qib beradi
+// const width='323.9px'; // stringda 
+// // stringdegi malumotdi raqamga otkazish
+// console.log('numberga olish',parseInt(width));
+// // parseInt => stringdi raqam qb oladi + uni yaxlitledi (prinsipi floor kabi verguldan keyin chopad)
+// console.log('numberga olish',parseFloat(width));
+// // parseFloat => stringdi raqam qib beradi
 
-// callback va asnyx
+// // 4
+// // 
+//88r8
+
+
+const firstlog=() =>
+  { setTimeout(function(){   // timeout 
+      console.log('first log');
+  },1000) /// 1000 -> 1 sekund  
+
+};
+function second()
+{
+  console.log('second');
+}
+firstlog();
+second();
+// const age=function( age)
+// {
+//   console.log("16");
+// }
+// console.log(age);
+
+function ShowGreeting(callback)
+{
+    console.log('Hello world');
+    callback();
+}
+
+ShowGreeting(function()
+{
+    console.log('are you ready');  // doimiy varianti 
+
+})
+
+ShowGreeting(()=>{console.log('are you ready')}); // arrow varianti bu hammasi bir xil ishlatiladi
+//  callback 163dan chaqirilmayapti
+//  callback function 
+
+// callback function qaysidir funksiya qanchadir davom etgandan keyin chaqirish uchun ishlatiladi
+
+

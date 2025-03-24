@@ -10,3 +10,5 @@
 
 // 17.03 metodlar string number metodlar
 
+
+// 24.03 callback function va obyekt destruktizatsiya
