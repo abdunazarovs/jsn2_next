@@ -263,3 +263,21 @@ console.log(person.name)  // .name (key) hossa
 const  {name,age}=person;
 // person.name -> person
 console.log(age,name);
+
+//massiv -> bir xil turdagi malumot,uni xotiradagi hajmi hammasiniki bir xil malumot turi
+
+const color=['red','blue','yellow','black','green'] 
+// name ,age ,job -> properties
+console.log(color.length);// method-> uzunligini ulchash uchun
+console.log(color[3]);// [3] index bilan ishlash uchun
+// pop va push
+// pop oxiridagi elementni ochiradi 
+
+console.log('kesb yuborilgan soz:',color.pop());
+console.log("qoshiladigan soz:",color.push('white'));// push oxiriga qoshadi
+// shift va unshift
+// oldidan kesadi -> shift
+console.log("oldidan kesilgan soz",color.shift())
+// unshift
+console.log("oldidan qoshadi",color.unshift('purple'))
+console.log(color);
